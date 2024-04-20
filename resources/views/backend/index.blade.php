@@ -7,7 +7,7 @@
 
     <div class="header">
         <div class="pull-left">
-            <div class="logo"><a href="{{url('/dashboard')}}"><!-- <img src="assets/images/logo.png" alt="" /> --><span>HMN STORE</span></a></div>
+            <div class="logo"><a href="{{url('/')}}"><!-- <img src="assets/images/logo.png" alt="" /> --><span>HMN STORE</span></a></div>
             <div class="hamburger sidebar-toggle">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -157,7 +157,11 @@
                     <div class="col-lg-8 p-r-0 title-margin-right">
                         <div class="page-header">
                             <div class="page-title">
-                                <h1>Hello, <span>Welcome Here</span></h1>
+                                <h1>Hello, <span>Welcome Here</span>
+                                     @if(session('success'))
+                                        <div class="alert alert-primary">{{ session('success') }}</div>
+                                    @endif
+                                </h1>
                             </div>
                         </div>
                     </div>

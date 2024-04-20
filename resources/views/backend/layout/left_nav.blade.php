@@ -3,7 +3,7 @@
         <div class="nano-content">
             <ul>
                 <li class="label">Main</li>
-                <li><a href="{{url('/dashboard')}}"><i class="ti-home"></i> Dashboard</a></li>
+                <li><a href="{{url('/')}}"><i class="ti-home"></i> Dashboard</a></li>
                     {{-- <ul>
                         <span class="sidebar-collapse-icon ti-angle-down">
                         <li><a href="index.html">Dashboard 1</a></li>
@@ -14,12 +14,12 @@
                     </ul> --}}
                 </li>
                 <li class="label">School</li>
-                <li><a class="sidebar-sub-toggle"><i class="ti-pencil-alt"></i>Management <span class="badge badge-primary">28</span><span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-pencil-alt"></i>Management <span class="badge badge-primary"></span><span class="sidebar-collapse-icon ti-angle-down"></span></a>
                     <ul>
-                        <li><a href="school-student.html">Student</a></li>
-                        <li><a href="school-student-profile.html">Student Profile</a></li>
-                        <li><a href="school-student-details.html">Student Detail</a></li>
-                        <li><a href="school-hostel-room.html">Hostel</a></li>
+                        <li><a href="{{url('/school-student')}}">Student</a></li>
+                        <li><a href="{{url('/school-student-profile')}}">Student Profile</a></li>
+                        <li><a href="{{url('/school-student-details')}}">Student Detail</a></li>
+                        <li><a href="{{url('school-hotel-room')}}">Hotel</a></li>
                         <li><a href="school-all-student-table.html">Students Table</a></li>
                         <li><a href="school-student-search.html">search</a></li>
                         <li><a href="school-teacher-information.html">Teacher Info</a></li>
@@ -48,7 +48,7 @@
                 </li>
 
                 <li class="label">Restaurant</li>
-                <li><a class="sidebar-sub-toggle"><i class="ti-cup"></i> Restaurant<span class="badge badge-primary">7</span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
+                <li><a class="sidebar-sub-toggle"><i class="ti-cup"></i> Restaurant<span class="badge badge-primary"></span> <span class="sidebar-collapse-icon ti-angle-down"></span></a>
                     <ul>
                         <li><a href="restaurant-menu-one.html">Menu One</a></li>
                         <li><a href="restaurant-menu-two.html">Menu Two</a></li>
@@ -147,7 +147,7 @@
                     </ul>
                 </li>
                 <li><a href="../documentation/index.html"><i class="ti-file"></i> Documentation</a></li>
-                <li><a><i class="ti-close"></i> Logout</a></li>
+                <li><a href="{{url('/login')}}"><i class="ti-close"></i> Logout</a></li>
             </ul>
         </div>
     </div>
